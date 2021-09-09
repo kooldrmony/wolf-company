@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.mission-details {
+    border: 1px solid black;
+    width: 50%;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    margin-top: 10%;
+    display: block;
+    justify-content: center;
+}
