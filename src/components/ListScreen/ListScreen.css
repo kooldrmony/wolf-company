@@ -2,12 +2,12 @@
 .listScreen {
     text-align: center;
     color: white;
-    background-color: blue;
+    background-color: grey;
     border: 1px solid black;
     width: 50%;
 }
 
 .mission_name {
-    color: lightblue;
+    color: white;
     border: solid white 1px;
 }
