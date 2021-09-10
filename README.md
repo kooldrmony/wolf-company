@@ -8,11 +8,11 @@ This is a simple project that calls a third party API and displays a list of Spa
 
 # Technologies used
 
-*GraphQL API
-*React
-*React Hooks
-*React-Router-Dom (routing library)
-*Jest (unit test)
+* GraphQL API
+* React
+* React Hooks
+* React-Router-Dom (routing library)
+* Jest (unit test)
 
 # How to run Project
 
