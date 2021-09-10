@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useQuery } from "@apollo/client";
 import './ListScreen.css';
 
 function ListScreen() {
   
   const [data, setData] = useState([])
   const [searchTag, setSearchTag] = useState("");
-  const [storageData, setStorageData] = useState([]);
 
   const API_QUERY = `
   {
@@ -23,7 +21,6 @@ function ListScreen() {
   `
 
   useEffect(() => {
-    // fetch('http://jsonplaceholder.typicode.com/posts')
     fetch("http://api.spacex.land/graphql/", {
         method: "POST",
         headers: { "Content-Type" : "application/json" },
@@ -41,25 +38,6 @@ function ListScreen() {
     localStorage.setItem('site', site);
 
   }
-
-//   const findIndex = () => {
-
-//     let storageID = localStorage.getItem('id');
-//     let storageTag = localStorage.getItem('tag')
-//     let index = data.findIndex(x => x.id == storageID)
-//     // data[index].tag = storageTag
-//     // if(!data[index].tag) {
-//     //     data[index].tag = "";
-//     // } else {
-//     //     data[index].tag = storageTag
-//     // }
-    
-//     // if(storageTag) {
-//     //     data[index].tag = storageTag;
-//     // }
-//     // localStorage.setItem('newObj', data[index])
-//     // console.log('data', data[index])
-//   }
   
   console.log(data)
   return (
